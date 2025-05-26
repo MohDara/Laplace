@@ -226,6 +226,13 @@
             font-size: 16px; /* Adjusted */
             overflow-wrap: break-word;
             word-wrap: break-word;
+            text-align: center; /* MODIFIED: Center content within theorem boxes */
+        }
+
+        /* ADDED: Rule to make .two-column stack vertically when inside .theorem-box */
+        .theorem-box .two-column {
+            grid-template-columns: 1fr; /* Stack items vertically */
+            gap: 10px; /* Adjust vertical gap between stacked items */
         }
     </style>
 </head>
